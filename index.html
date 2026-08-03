@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR文字起こし</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Tesseract.js -->
+    <script src="https://unpkg.com/tesseract.js@5/dist/tesseract.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>📷 OCR文字起こし</h1>
+
+    <input type="file" id="imageInput" accept="image/*">
+
+    <div class="preview">
+        <img id="previewImage" src="" alt="">
+    </div>
+
+    <button id="ocrButton">
+        文字を読み取る
+    </button>
+
+    <h2>読み取り結果</h2>
+
+    <textarea id="result" placeholder="ここに文字が表示されます"></textarea>
+
+    <button id="copyButton">
+        コピー
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
